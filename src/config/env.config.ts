@@ -18,6 +18,7 @@ export const env = {
     username: process.env.DB_USER || 'postgres',
     password: process.env.DB_PASSWORD || 'postgres',
     database: process.env.DB_NAME || 'task_management_db',
+    ssl: process.env.DB_SSL === 'true',
   },
   jwt: {
     secret: process.env.JWT_SECRET || 'super_secret_jwt_key_senior_fullstack_2026',
