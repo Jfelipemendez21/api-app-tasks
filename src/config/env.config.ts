@@ -17,8 +17,7 @@ export const env = {
     port: parseInt(process.env.DB_PORT || '5432', 10),
     username: process.env.DB_USER || 'postgres',
     password: process.env.DB_PASSWORD || 'postgres',
-    database: process.env.DB_NAME || 'task_management_db',
-    ssl: process.env.DB_SSL === 'true',
+    database: process.env.DB_NAME || 'task_management_db'
   },
   jwt: {
     secret: process.env.JWT_SECRET || 'super_secret_jwt_key_senior_fullstack_2026',
